@@ -48,18 +48,18 @@ class FDBarGauge: UIView {
     var warnThreshold = 0.6 {
         didSet {
             if (!isnan(warnThreshold) && warnThreshold > 0.0) {
-                warningBarIdx = -1
-            } else {
                 warningBarIdx = Int(warnThreshold * Double(numBars))
+            } else {
+                warningBarIdx = -1
             }
         }
     }
     var dangerThreshold = 0.8 {
         didSet {
             if (!isnan(dangerThreshold) && dangerThreshold > 0.0) {
-                dangerBarIdx = -1
-            } else {
                 dangerBarIdx = Int(dangerThreshold * Double(numBars))
+            } else {
+                dangerBarIdx = -1
             }
         }
     }
