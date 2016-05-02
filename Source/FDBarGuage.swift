@@ -9,14 +9,13 @@
 //
 
 import Foundation
-
 import UIKit
 
-class FDBarGauge: UIView {
-    var holdPeak = false
-    var litEffect = true
-    var reverseDirection = false // YES = top-to-bottom or right-to-left
-    var value = 0.0 {
+public class FDBarGauge: UIView {
+    public var holdPeak = false
+    public var litEffect = true
+    public var reverseDirection = false // YES = top-to-bottom or right-to-left
+    public var value = 0.0 {
         didSet {
             var redraw = false
             // Point at which bars start lighting up
@@ -42,10 +41,10 @@ class FDBarGauge: UIView {
             }
         }
     }
-    var peakValue = 0.0
-    var maxLimit = 1.0
-    var minLimit = 0.0
-    var warnThreshold = 0.6 {
+    public var peakValue = 0.0
+    public var maxLimit = 1.0
+    public var minLimit = 0.0
+    public var warnThreshold = 0.6 {
         didSet {
             if (!isnan(warnThreshold) && warnThreshold > 0.0) {
                 warningBarIdx = Int(warnThreshold * Double(numBars))
@@ -54,7 +53,7 @@ class FDBarGauge: UIView {
             }
         }
     }
-    var dangerThreshold = 0.8 {
+    public var dangerThreshold = 0.8 {
         didSet {
             if (!isnan(dangerThreshold) && dangerThreshold > 0.0) {
                 dangerBarIdx = Int(dangerThreshold * Double(numBars))
@@ -63,7 +62,7 @@ class FDBarGauge: UIView {
             }
         }
     }
-    var numBars = 10 { // Number of segments
+    public var numBars = 10 { // Number of segments
         didSet {
             peakValue = -.infinity // force it to be updated w/new bar index
             // Update thresholds
@@ -72,11 +71,11 @@ class FDBarGauge: UIView {
             dangerThreshold = 1 * dangerThreshold
         }
     }
-    var outerBorderColor = UIColor.grayColor()
-    var innerBorderColor = UIColor.blackColor()
-    var normalColor = UIColor.greenColor()
-    var warningColor = UIColor.yellowColor()
-    var dangerColor = UIColor.redColor()
+    public var outerBorderColor = UIColor.grayColor()
+    public var innerBorderColor = UIColor.blackColor()
+    public var normalColor = UIColor.greenColor()
+    public var warningColor = UIColor.yellowColor()
+    public var dangerColor = UIColor.redColor()
 
     private var onIdx = 0
     private var offIdx = 0
@@ -95,7 +94,7 @@ class FDBarGauge: UIView {
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -114,7 +113,7 @@ class FDBarGauge: UIView {
     //  Method: drawRect:
     //    Draw the gauge
     //
-    override func drawRect(rect: CGRect) {
+    override public func drawRect(rect: CGRect) {
         var ctx: CGContextRef
         // Graphics context
         var rectBounds: CGRect
@@ -147,7 +146,7 @@ class FDBarGauge: UIView {
         // Draw LED bars
         CGContextSetStrokeColorWithColor(ctx, innerBorderColor.CGColor)
         CGContextSetLineWidth(ctx, 1.0)
-        for var iX = 0; iX < numBars; ++iX {
+        for iX in 0..<numBars {
             // Determine position for this bar
             if reverseDirection {
                 // Top-to-bottom or right-to-left
