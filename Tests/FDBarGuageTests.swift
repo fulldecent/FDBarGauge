@@ -2,12 +2,11 @@
 //  FDBarGuageTests.swift
 //  FDBarGuageTests
 //
-//  Created by William Entriken on 4/25/16.
+//  Created by Full Decent on 5/2/16.
 //  Copyright © 2016 William Entriken. All rights reserved.
 //
 
 import XCTest
-@testable import FDBarGuage
 
 class FDBarGuageTests: XCTestCase {
     
@@ -22,8 +21,17 @@ class FDBarGuageTests: XCTestCase {
     }
     
     func testExample() {
-        XCTAssert(true)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true)
     }
+    
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measureBlock {
+            XCTAssert(true)
+            // Put the code you want to measure the time of here.
+        }
+    }
+    
 }

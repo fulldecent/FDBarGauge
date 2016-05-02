@@ -32,8 +32,8 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9FEF4BD1CCEBC0F0013FBDD"
-               BuildableName = "FDBarGuage.xctest"
+               BlueprintIdentifier = "D9223AE11CD81E5B00F097E4"
+               BuildableName = "FDBarGuageTests.xctest"
                BlueprintName = "FDBarGuageTests"
                ReferencedContainer = "container:FDBarGuage.xcodeproj">
             </BuildableReference>

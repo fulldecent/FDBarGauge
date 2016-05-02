@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9223AE51CD81E5B00F097E4 /* FDBarGuageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223AE41CD81E5B00F097E4 /* FDBarGuageTests.swift */; };
+		D9223AE71CD81E5B00F097E4 /* FDBarGuage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */; };
 		D94BE1CF1CCEBFD80042282A /* FDBarGuage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94BE1CE1CCEBFD80042282A /* FDBarGuage.swift */; };
-		D9FEF4BF1CCEBC0F0013FBDD /* FDBarGuage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */; };
-		D9FEF4C41CCEBC100013FBDD /* FDBarGuageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FEF4C31CCEBC100013FBDD /* FDBarGuageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D9FEF4C01CCEBC0F0013FBDD /* PBXContainerItemProxy */ = {
+		D9223AE81CD81E5B00F097E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9FEF4AB1CCEBC0D0013FBDD /* Project object */;
 			proxyType = 1;
@@ -23,15 +23,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9223AE21CD81E5B00F097E4 /* FDBarGuageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDBarGuageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9223AE41CD81E5B00F097E4 /* FDBarGuageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBarGuageTests.swift; sourceTree = "<group>"; };
+		D9223AE61CD81E5B00F097E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94BE1CE1CCEBFD80042282A /* FDBarGuage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDBarGuage.swift; sourceTree = "<group>"; };
 		D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDBarGuage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FEF4B91CCEBC0D0013FBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9FEF4BE1CCEBC0F0013FBDD /* FDBarGuage.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDBarGuage.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9FEF4C31CCEBC100013FBDD /* FDBarGuageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBarGuageTests.swift; sourceTree = "<group>"; };
-		D9FEF4C51CCEBC100013FBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D9223ADF1CD81E5B00F097E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9223AE71CD81E5B00F097E4 /* FDBarGuage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9FEF4B01CCEBC0D0013FBDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,22 +47,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9FEF4BB1CCEBC0F0013FBDD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9FEF4BF1CCEBC0F0013FBDD /* FDBarGuage.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9223AE31CD81E5B00F097E4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D9223AE41CD81E5B00F097E4 /* FDBarGuageTests.swift */,
+				D9223AE61CD81E5B00F097E4 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		D9FEF4AA1CCEBC0D0013FBDD = {
 			isa = PBXGroup;
 			children = (
 				D9FEF4B61CCEBC0D0013FBDD /* Source */,
 				D9FEF4C21CCEBC0F0013FBDD /* Tests */,
+				D9223AE31CD81E5B00F097E4 /* Tests */,
 				D9FEF4B51CCEBC0D0013FBDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */,
-				D9FEF4BE1CCEBC0F0013FBDD /* FDBarGuage.xctest */,
+				D9223AE21CD81E5B00F097E4 /* FDBarGuageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,8 +90,6 @@
 		D9FEF4C21CCEBC0F0013FBDD /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D9FEF4C31CCEBC100013FBDD /* FDBarGuageTests.swift */,
-				D9FEF4C51CCEBC100013FBDD /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -99,6 +107,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D9223AE11CD81E5B00F097E4 /* FDBarGuageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9223AEA1CD81E5B00F097E4 /* Build configuration list for PBXNativeTarget "FDBarGuageTests" */;
+			buildPhases = (
+				D9223ADE1CD81E5B00F097E4 /* Sources */,
+				D9223ADF1CD81E5B00F097E4 /* Frameworks */,
+				D9223AE01CD81E5B00F097E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9223AE91CD81E5B00F097E4 /* PBXTargetDependency */,
+			);
+			name = FDBarGuageTests;
+			productName = FDBarGuageTests;
+			productReference = D9223AE21CD81E5B00F097E4 /* FDBarGuageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D9FEF4B31CCEBC0D0013FBDD /* FDBarGuage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "FDBarGuage" */;
@@ -117,24 +143,6 @@
 			productReference = D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D9FEF4BD1CCEBC0F0013FBDD /* FDBarGuageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9FEF4CB1CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "FDBarGuageTests" */;
-			buildPhases = (
-				D9FEF4BA1CCEBC0F0013FBDD /* Sources */,
-				D9FEF4BB1CCEBC0F0013FBDD /* Frameworks */,
-				D9FEF4BC1CCEBC0F0013FBDD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D9FEF4C11CCEBC0F0013FBDD /* PBXTargetDependency */,
-			);
-			name = FDBarGuageTests;
-			productName = FDBarGuageTests;
-			productReference = D9FEF4BE1CCEBC0F0013FBDD /* FDBarGuage.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,10 +153,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "William Entriken";
 				TargetAttributes = {
-					D9FEF4B31CCEBC0D0013FBDD = {
+					D9223AE11CD81E5B00F097E4 = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					D9FEF4BD1CCEBC0F0013FBDD = {
+					D9FEF4B31CCEBC0D0013FBDD = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -166,20 +174,20 @@
 			projectRoot = "";
 			targets = (
 				D9FEF4B31CCEBC0D0013FBDD /* FDBarGuage */,
-				D9FEF4BD1CCEBC0F0013FBDD /* FDBarGuageTests */,
+				D9223AE11CD81E5B00F097E4 /* FDBarGuageTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D9FEF4B21CCEBC0D0013FBDD /* Resources */ = {
+		D9223AE01CD81E5B00F097E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9FEF4BC1CCEBC0F0013FBDD /* Resources */ = {
+		D9FEF4B21CCEBC0D0013FBDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,6 +197,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D9223ADE1CD81E5B00F097E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9223AE51CD81E5B00F097E4 /* FDBarGuageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9FEF4AF1CCEBC0D0013FBDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,25 +213,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9FEF4BA1CCEBC0F0013FBDD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9FEF4C41CCEBC100013FBDD /* FDBarGuageTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D9FEF4C11CCEBC0F0013FBDD /* PBXTargetDependency */ = {
+		D9223AE91CD81E5B00F097E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D9FEF4B31CCEBC0D0013FBDD /* FDBarGuage */;
-			targetProxy = D9FEF4C01CCEBC0F0013FBDD /* PBXContainerItemProxy */;
+			targetProxy = D9223AE81CD81E5B00F097E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D9223AEB1CD81E5B00F097E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGuage.FDBarGuageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9223AEC1CD81E5B00F097E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGuage.FDBarGuageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D9FEF4C61CCEBC100013FBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,31 +370,17 @@
 			};
 			name = Release;
 		};
-		D9FEF4CC1CCEBC100013FBDD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGuage.FDBarGuageTests;
-				PRODUCT_NAME = FDBarGuage;
-			};
-			name = Debug;
-		};
-		D9FEF4CD1CCEBC100013FBDD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGuage.FDBarGuageTests;
-				PRODUCT_NAME = FDBarGuage;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D9223AEA1CD81E5B00F097E4 /* Build configuration list for PBXNativeTarget "FDBarGuageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9223AEB1CD81E5B00F097E4 /* Debug */,
+				D9223AEC1CD81E5B00F097E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "FDBarGuage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -381,15 +395,6 @@
 			buildConfigurations = (
 				D9FEF4C91CCEBC100013FBDD /* Debug */,
 				D9FEF4CA1CCEBC100013FBDD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D9FEF4CB1CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "FDBarGuageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9FEF4CC1CCEBC100013FBDD /* Debug */,
-				D9FEF4CD1CCEBC100013FBDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
