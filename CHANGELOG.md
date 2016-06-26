@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [Master](https://github.com/fulldecent/FDBarGuage/compare/1.0.1...master)
+## [Master](https://github.com/fulldecent/FDBarGuage/compare/1.0.2...master)
+
+---
+
+## [1.0.2](https://github.com/fulldecent/FDBarGuage/releases/tag/1.0.2)
+Released on 2016-06-26.
 
 #### Added
 - Created contributing guide and documented release process

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'FDBarGuage'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.license = 'MIT'
   s.summary = 'A view controller for chess boards'
   s.homepage = 'https://github.com/fulldecent/FDBarGuage'
