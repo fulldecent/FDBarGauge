@@ -20,8 +20,12 @@ segmented/stacked LEDs, with several colors to indicate thresholds.
 This control replicates that look, using Quartz drawing primitives,
 and auto-adjusts to horizontal or vertical orientation. Additionally,
 the colors, number of bars, peak hold, and other items are easily
-customized.
+customized. Intended uses include:
 
+ * Realtime data visualization
+ * Level bars
+ * Single-value charting
+ * A VERY simple bar chart (if you use several of these)
 
 Usage
 -----
@@ -38,6 +42,54 @@ For more information have a look at the demo code, which
 has multiple examples including a version that customizes the
 with an LCD-style appearance.
 
+Following are all of the customizable properties:
+
+```swift
+/// Whether to maintain a view of local maximums
+@IBInspectable public var holdPeak: Bool
+
+/// This applies a gradient style to the rendering
+@IBInspectable public var litEffect: Bool
+
+/// If `true` then render top-to-bottom or right-to-left
+@IBInspectable public var reverseDirection: Bool
+
+/// The quantity to be rendered
+@IBInspectable public var value: Double { get set }
+
+/// The local maximum for `value`
+@IBInspectable public var peakValue: Double
+
+/// The highest possible amount for `value`
+@IBInspectable public var maxLimit: Double
+
+/// The lowest possible amount for `value`, must be less than `maxLimit`
+@IBInspectable public var minLimit: Double
+
+/// A quantity for `value` which will render in a special color
+@IBInspectable public var warnThreshold: Double { get set }
+
+/// A quantity for `value` which will render in a special color
+@IBInspectable public var dangerThreshold: Double { get set }
+
+/// The number of discrete segments to render
+@IBInspectable public var numBars: Int { get set }
+
+/// Outside border color
+@IBInspectable public var outerBorderColor: UIColor
+
+/// Inside border color
+@IBInspectable public var innerBorderColor: UIColor
+
+/// The rendered segment color before reaching the warning threshold
+@IBInspectable public var normalColor: UIColor
+
+/// The rendered segment color after reaching the warning threshold
+@IBInspectable public var warningColor: UIColor
+
+/// The rendered segment color after reaching the danger threshold
+@IBInspectable public var dangerColor: UIColor
+```
 
 Installation
 ------------
@@ -59,7 +111,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
-pod 'FDBarGuage', '~> 0.1'
+pod 'FDBarGuage'
 ```
 
 Then, run the following command:

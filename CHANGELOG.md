@@ -17,8 +17,14 @@ All notable changes to this project will be documented in this file.
   - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
   [#7](https://github.com/fulldecent/FDBarGuage/issues/7).
 - Headerdoc documentation
-- Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
-[#5](https://github.com/fulldecent/FDBarGuage/issues/5).
+  - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
+  [#5](https://github.com/fulldecent/FDBarGuage/issues/5).
+
+#### Updated
+- README added full API documentation
+  -  by [William Entriken](https://github.com/fulldecent) in Regards to Issue
+  [#6](https://github.com/fulldecent/FDBarGuage/issues/6).
+
 
 ---
 
