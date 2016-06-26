@@ -14,6 +14,7 @@ All contributors are welcome. Please use issues and pull requests to contribute 
    2. Create the release with notes from the change log
 3. Push the podspec to cocoapods
    1. `pod trunk push`
-4. Add Carthage build to release
+4. Create Carthage binaries
    1. `carthage build --no-skip-current`
    2. `carthage archive FDBarGuage`
+   3. Add to the GitHub release
