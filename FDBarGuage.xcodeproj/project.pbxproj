@@ -63,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				D9FEF4B61CCEBC0D0013FBDD /* Source */,
-				D9FEF4C21CCEBC0F0013FBDD /* Tests */,
 				D9223AE31CD81E5B00F097E4 /* Tests */,
 				D9FEF4B51CCEBC0D0013FBDD /* Products */,
 			);
@@ -85,13 +84,6 @@
 				D9FEF4B91CCEBC0D0013FBDD /* Info.plist */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		D9FEF4C21CCEBC0F0013FBDD /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +372,7 @@
 				D9223AEC1CD81E5B00F097E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "FDBarGuage" */ = {
 			isa = XCConfigurationList;

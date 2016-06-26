@@ -11,11 +11,16 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 public class FDBarGauge: UIView {
-    public var holdPeak = false
-    public var litEffect = true
-    public var reverseDirection = false // YES = top-to-bottom or right-to-left
-    public var value = 0.0 {
+    
+    @IBInspectable public var holdPeak = false
+    
+    @IBInspectable public var litEffect = true
+    
+    @IBInspectable public var reverseDirection = false // YES = top-to-bottom or right-to-left
+    
+    @IBInspectable public var value = 0.0 {
         didSet {
             var redraw = false
             // Point at which bars start lighting up
@@ -41,10 +46,14 @@ public class FDBarGauge: UIView {
             }
         }
     }
-    public var peakValue = 0.0
-    public var maxLimit = 1.0
-    public var minLimit = 0.0
-    public var warnThreshold = 0.6 {
+    
+    @IBInspectable public var peakValue = 0.0
+    
+    @IBInspectable public var maxLimit = 1.0
+    
+    @IBInspectable public var minLimit = 0.0
+    
+    @IBInspectable public var warnThreshold = 0.6 {
         didSet {
             if (!isnan(warnThreshold) && warnThreshold > 0.0) {
                 warningBarIdx = Int(warnThreshold * Double(numBars))
@@ -53,7 +62,8 @@ public class FDBarGauge: UIView {
             }
         }
     }
-    public var dangerThreshold = 0.8 {
+    
+    @IBInspectable public var dangerThreshold = 0.8 {
         didSet {
             if (!isnan(dangerThreshold) && dangerThreshold > 0.0) {
                 dangerBarIdx = Int(dangerThreshold * Double(numBars))
@@ -62,7 +72,8 @@ public class FDBarGauge: UIView {
             }
         }
     }
-    public var numBars = 10 { // Number of segments
+    
+    @IBInspectable public var numBars = 10 { // Number of segments
         didSet {
             peakValue = -.infinity // force it to be updated w/new bar index
             // Update thresholds
@@ -71,11 +82,16 @@ public class FDBarGauge: UIView {
             dangerThreshold = 1 * dangerThreshold
         }
     }
-    public var outerBorderColor = UIColor.grayColor()
-    public var innerBorderColor = UIColor.blackColor()
-    public var normalColor = UIColor.greenColor()
-    public var warningColor = UIColor.yellowColor()
-    public var dangerColor = UIColor.redColor()
+    
+    @IBInspectable public var outerBorderColor = UIColor.grayColor()
+    
+    @IBInspectable public var innerBorderColor = UIColor.blackColor()
+    
+    @IBInspectable public var normalColor = UIColor.greenColor()
+    
+    @IBInspectable public var warningColor = UIColor.yellowColor()
+    
+    @IBInspectable public var dangerColor = UIColor.redColor()
 
     private var onIdx = 0
     private var offIdx = 0
