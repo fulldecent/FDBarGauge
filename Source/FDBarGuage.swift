@@ -14,23 +14,27 @@ import UIKit
 @IBDesignable
 public class FDBarGauge: UIView {
     
+    /// Whether to maintain a view of local maximums
     @IBInspectable public var holdPeak = false
     
+    /// This applies a gradient style to the rendering
     @IBInspectable public var litEffect = true
     
-    @IBInspectable public var reverseDirection = false // YES = top-to-bottom or right-to-left
+    /// If `true` then render top-to-bottom or right-to-left
+    @IBInspectable public var reverseDirection = false
     
+    /// The quantity to be rendered
     @IBInspectable public var value = 0.0 {
         didSet {
             var redraw = false
             // Point at which bars start lighting up
-            let newOnIdx: Int = (value >= minLimit) ? 0 : numBars
+            let newOnIdx = (value >= minLimit) ? 0 : numBars
             if onIdx != newOnIdx {
                 onIdx = newOnIdx
                 redraw = true
             }
             // Point at which bars are no longer lit
-            let newOffIdx: Int = Int(((value - minLimit) / (maxLimit - minLimit)) * Double(numBars))
+            let newOffIdx = Int(((value - minLimit) / (maxLimit - minLimit)) * Double(numBars))
             if newOffIdx != offIdx {
                 offIdx = newOffIdx
                 redraw = true
@@ -47,12 +51,16 @@ public class FDBarGauge: UIView {
         }
     }
     
+    /// The local maximum for `value`
     @IBInspectable public var peakValue = 0.0
     
+    /// The highest possible amount for `value`
     @IBInspectable public var maxLimit = 1.0
     
+    /// The lowest possible amount for `value`
     @IBInspectable public var minLimit = 0.0
     
+    /// A quantity for `value` which will render in a special color
     @IBInspectable public var warnThreshold = 0.6 {
         didSet {
             if (!isnan(warnThreshold) && warnThreshold > 0.0) {
@@ -63,6 +71,7 @@ public class FDBarGauge: UIView {
         }
     }
     
+    /// A quantity for `value` which will render in a special color
     @IBInspectable public var dangerThreshold = 0.8 {
         didSet {
             if (!isnan(dangerThreshold) && dangerThreshold > 0.0) {
@@ -73,7 +82,8 @@ public class FDBarGauge: UIView {
         }
     }
     
-    @IBInspectable public var numBars = 10 { // Number of segments
+    /// The number of discrete segments to render
+    @IBInspectable public var numBars = 10 {
         didSet {
             peakValue = -.infinity // force it to be updated w/new bar index
             // Update thresholds
@@ -83,14 +93,19 @@ public class FDBarGauge: UIView {
         }
     }
     
+    /// Outside border color
     @IBInspectable public var outerBorderColor = UIColor.grayColor()
     
+    /// Inside border color
     @IBInspectable public var innerBorderColor = UIColor.blackColor()
     
+    /// The rendered segment color before reaching the warning threshold
     @IBInspectable public var normalColor = UIColor.greenColor()
     
+    /// The rendered segment color after reaching the warning threshold
     @IBInspectable public var warningColor = UIColor.yellowColor()
     
+    /// The rendered segment color after reaching the danger threshold
     @IBInspectable public var dangerColor = UIColor.redColor()
 
     private var onIdx = 0
@@ -115,20 +130,14 @@ public class FDBarGauge: UIView {
         setup()
     }
     
-    //------------------------------------------------------------------------
-    //  Method: resetPeak
-    //    Resets peak value.
-    //
+    /// Resets peak value
     func resetPeak() {
         peakValue = -.infinity
         peakBarIdx = -1
         self.setNeedsDisplay()
     }
-    
-    //------------------------------------------------------------------------
-    //  Method: drawRect:
-    //    Draw the gauge
-    //
+
+    /// Draw the guage
     override public func drawRect(rect: CGRect) {
         var ctx: CGContextRef
         // Graphics context
@@ -203,10 +212,7 @@ public class FDBarGauge: UIView {
         CGContextStrokePath(ctx)
     }
     
-    //------------------------------------------------------------------------
-    //  Method: drawBar::::
-    //    This method draws a bar
-    //
+    /// Draw one of the bar segments inside the guage
     private func drawBar(a_ctx: CGContextRef, withRect a_rect: CGRect, andColor a_clr: UIColor, lit a_fLit: Bool) {
         // Is the bar lit?
         if a_fLit {

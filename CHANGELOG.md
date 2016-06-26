@@ -10,6 +10,9 @@ All notable changes to this project will be documented in this file.
 - Change Log
   - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
   [#7](https://github.com/fulldecent/FDBarGuage/issues/7).
+- Headerdoc documentation
+- Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
+[#5](https://github.com/fulldecent/FDBarGuage/issues/5).
 
 ---
 
