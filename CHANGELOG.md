@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file.
 ## [Master](https://github.com/fulldecent/FDBarGuage/compare/1.0.1...master)
 
 #### Added
+- Automated CocoaPods Quality Indexes testing
+  - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
+  [#11](https://github.com/fulldecent/FDBarGuage/issues/11).
 - Unit tests
   - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
   [#8](https://github.com/fulldecent/FDBarGuage/issues/8).
