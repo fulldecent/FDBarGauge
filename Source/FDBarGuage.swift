@@ -57,7 +57,7 @@ public class FDBarGauge: UIView {
     /// The highest possible amount for `value`
     @IBInspectable public var maxLimit = 1.0
     
-    /// The lowest possible amount for `value`
+    /// The lowest possible amount for `value`, must be less than `maxLimit`
     @IBInspectable public var minLimit = 0.0
     
     /// A quantity for `value` which will render in a special color
@@ -83,7 +83,7 @@ public class FDBarGauge: UIView {
     }
     
     /// The number of discrete segments to render
-    @IBInspectable public var numBars = 10 {
+    @IBInspectable public var numBars: Int = 10 {
         didSet {
             peakValue = -.infinity // force it to be updated w/new bar index
             // Update thresholds

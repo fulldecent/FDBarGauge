@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file.
 ## [Master](https://github.com/fulldecent/FDBarGuage/compare/1.0.1...master)
 
 #### Added
+- Unit tests
+  - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
+  [#8](https://github.com/fulldecent/FDBarGuage/issues/8).
 - Change Log
   - Added by [William Entriken](https://github.com/fulldecent) in Regards to Issue
   [#7](https://github.com/fulldecent/FDBarGuage/issues/7).
