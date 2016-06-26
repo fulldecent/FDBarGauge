@@ -6,6 +6,7 @@ FDBarGuage
 [![License](https://img.shields.io/cocoapods/l/FDBarGuage.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGuage)
 [![Platform](https://img.shields.io/cocoapods/p/FDBarGuage.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGuage)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=fulldecent/fdbarguage)](http://clayallsopp.github.io/readme-score?url=fulldecent/fdbarguage)
 
 ![Screenshot](https://raw.github.com/ChiefPilot/F3BarGauge/master/F3BarGauge.png "Screenshot of Component Demo App")
 
