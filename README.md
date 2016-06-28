@@ -56,7 +56,7 @@ Following are all of the customizable properties:
 @IBInspectable public var reverseDirection: Bool
 
 /// The quantity to be rendered
-@IBInspectable public var value: Double { get set }
+@IBInspectable public var value: Double
 
 /// The local maximum for `value`
 @IBInspectable public var peakValue: Double
@@ -68,13 +68,13 @@ Following are all of the customizable properties:
 @IBInspectable public var minLimit: Double
 
 /// A quantity for `value` which will render in a special color
-@IBInspectable public var warnThreshold: Double { get set }
+@IBInspectable public var warnThreshold: Double
 
 /// A quantity for `value` which will render in a special color
-@IBInspectable public var dangerThreshold: Double { get set }
+@IBInspectable public var dangerThreshold: Double
 
 /// The number of discrete segments to render
-@IBInspectable public var numBars: Int { get set }
+@IBInspectable public var numBars: Int
 
 /// Outside border color
 @IBInspectable public var outerBorderColor: UIColor
