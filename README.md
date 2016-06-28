@@ -6,6 +6,7 @@ FDBarGuage
 [![License](https://img.shields.io/cocoapods/l/FDBarGuage.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGuage)
 [![Platform](https://img.shields.io/cocoapods/p/FDBarGuage.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGuage)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=fulldecent/fdbarguage)](http://clayallsopp.github.io/readme-score?url=fulldecent/fdbarguage)
 
 ![Screenshot](https://raw.github.com/ChiefPilot/F3BarGauge/master/F3BarGauge.png "Screenshot of Component Demo App")
 
@@ -55,7 +56,7 @@ Following are all of the customizable properties:
 @IBInspectable public var reverseDirection: Bool
 
 /// The quantity to be rendered
-@IBInspectable public var value: Double { get set }
+@IBInspectable public var value: Double
 
 /// The local maximum for `value`
 @IBInspectable public var peakValue: Double
@@ -67,13 +68,13 @@ Following are all of the customizable properties:
 @IBInspectable public var minLimit: Double
 
 /// A quantity for `value` which will render in a special color
-@IBInspectable public var warnThreshold: Double { get set }
+@IBInspectable public var warnThreshold: Double
 
 /// A quantity for `value` which will render in a special color
-@IBInspectable public var dangerThreshold: Double { get set }
+@IBInspectable public var dangerThreshold: Double
 
 /// The number of discrete segments to render
-@IBInspectable public var numBars: Int { get set }
+@IBInspectable public var numBars: Int
 
 /// Outside border color
 @IBInspectable public var outerBorderColor: UIColor
