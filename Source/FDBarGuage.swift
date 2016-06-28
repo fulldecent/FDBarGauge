@@ -11,18 +11,18 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-public class FDBarGauge: UIView {
-    
+/// A view for showing a single number on an LED display
+@IBDesignable public class FDBarGauge: UIView {
+
     /// Whether to maintain a view of local maximums
     @IBInspectable public var holdPeak = false
-    
+
     /// This applies a gradient style to the rendering
     @IBInspectable public var litEffect = true
-    
+
     /// If `true` then render top-to-bottom or right-to-left
     @IBInspectable public var reverseDirection = false
-    
+
     /// The quantity to be rendered
     @IBInspectable public var value = 0.0 {
         didSet {
@@ -50,16 +50,16 @@ public class FDBarGauge: UIView {
             }
         }
     }
-    
+
     /// The local maximum for `value`
     @IBInspectable public var peakValue = 0.0
-    
+
     /// The highest possible amount for `value`
     @IBInspectable public var maxLimit = 1.0
-    
+
     /// The lowest possible amount for `value`, must be less than `maxLimit`
     @IBInspectable public var minLimit = 0.0
-    
+
     /// A quantity for `value` which will render in a special color
     @IBInspectable public var warnThreshold = 0.6 {
         didSet {
@@ -70,7 +70,7 @@ public class FDBarGauge: UIView {
             }
         }
     }
-    
+
     /// A quantity for `value` which will render in a special color
     @IBInspectable public var dangerThreshold = 0.8 {
         didSet {
@@ -81,7 +81,7 @@ public class FDBarGauge: UIView {
             }
         }
     }
-    
+
     /// The number of discrete segments to render
     @IBInspectable public var numBars: Int = 10 {
         didSet {
@@ -92,19 +92,19 @@ public class FDBarGauge: UIView {
             dangerThreshold = 1 * dangerThreshold
         }
     }
-    
+
     /// Outside border color
     @IBInspectable public var outerBorderColor = UIColor.grayColor()
-    
+
     /// Inside border color
     @IBInspectable public var innerBorderColor = UIColor.blackColor()
-    
+
     /// The rendered segment color before reaching the warning threshold
     @IBInspectable public var normalColor = UIColor.greenColor()
-    
+
     /// The rendered segment color after reaching the warning threshold
     @IBInspectable public var warningColor = UIColor.yellowColor()
-    
+
     /// The rendered segment color after reaching the danger threshold
     @IBInspectable public var dangerColor = UIColor.redColor()
 
@@ -113,23 +113,25 @@ public class FDBarGauge: UIView {
     private var peakBarIdx = -1
     private var warningBarIdx = 6
     private var dangerBarIdx = 8
-    
+
     private func setup() {
         clearsContextBeforeDrawing = false;
         opaque = false;
         backgroundColor = UIColor.blackColor()
     }
-    
+
+    /// UIView initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-    
+
+    /// UIView initializer
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
-    
+
     /// Resets peak value
     func resetPeak() {
         peakValue = -.infinity
@@ -211,7 +213,7 @@ public class FDBarGauge: UIView {
         CGContextAddRect(ctx, CGRectInset(rectBounds, 1, 1))
         CGContextStrokePath(ctx)
     }
-    
+
     /// Draw one of the bar segments inside the guage
     private func drawBar(a_ctx: CGContextRef, withRect a_rect: CGRect, andColor a_clr: UIColor, lit a_fLit: Bool) {
         // Is the bar lit?
@@ -236,12 +238,12 @@ public class FDBarGauge: UIView {
                     aComponents.append(aComponents[2] - ((aComponents[2] > 0.3) ? 0.3 : 0.0))
                     aComponents.append(aComponents[3])
                 }
-                
+
                 // Calculate radius needed
                 let width: CGFloat = CGRectGetWidth(a_rect)
                 let height: CGFloat = CGRectGetHeight(a_rect)
                 let radius: CGFloat = sqrt(width * width + height * height)
-                
+
                 // Draw the gradient inside the provided rectangle
                 let myColorspace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()!
                 let myGradient: CGGradientRef = CGGradientCreateWithColorComponents(myColorspace, aComponents, locations, num_locations)!
