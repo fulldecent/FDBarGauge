@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sliderValueChanged(sender: UISlider) {
-        valueLabel.text = String(sender.value)
+        valueLabel.text = String(sender.value.round(2))
         adjustBarGaugeValues(Double(sender.value))
 
     }

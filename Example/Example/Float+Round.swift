@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension Double {
+extension Float {
     /// Rounds the double to decimal places value
-    func roundToPlaces(places:Int) -> Double {
-        let divisor = pow(10.0, Double(places))
-        return round(self * divisor) / divisor
+    func round(places:Int) -> Float {
+        let divisor: Float = pow(10.0, Float(places))
+        return roundf(self * divisor) / divisor
     }
 }
