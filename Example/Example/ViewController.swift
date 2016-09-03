@@ -26,12 +26,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupBarGauges()
         setupValueLabel()
+        self.setNeedsStatusBarAppearanceUpdate()
     }
 
     @IBAction func sliderValueChanged(sender: UISlider) {
         valueLabel.text = String(sender.value.round(2))
         adjustBarGaugeValues(Double(sender.value))
 
+    }
+
+    @IBAction func resetButtonTapped(sender: UIButton) {
+        peakBarGauge.resetPeak()
     }
 
     func adjustBarGaugeValues(value: Double) {
@@ -47,7 +52,6 @@ class ViewController: UIViewController {
 
     func setupBarGauges() {
         appendBarGauges()
-
         setupLeftBarGauge()
         setupDefaultBarGauge()
         setupReversedBarGauge()
@@ -55,35 +59,48 @@ class ViewController: UIViewController {
         setupRangeBarGauge()
         setupPeakBarGauge()
         setupLCDBarGauge()
+        adjustBarGaugeValues(Double(slider.value))
     }
 
 
-    func setupLeftBarGauge() {
+    func setupLeftBarGauge() {}
 
-    }
-
-    func setupDefaultBarGauge() {
-
-    }
+    func setupDefaultBarGauge() {}
 
     func setupReversedBarGauge() {
-
+        reversedBarGauge.reverseDirection = true
     }
 
     func setupColorBarGauge() {
+        colorBarGauge.numBars = 15
+        colorBarGauge.warnThreshold = (6.0/15.0)
+        colorBarGauge.dangerThreshold = (13.0/15.0)
 
+        colorBarGauge.normalColor = UIColor.blueColor()
+        colorBarGauge.warningColor = UIColor.cyanColor()
+        colorBarGauge.dangerColor = UIColor.magentaColor()
+        colorBarGauge.outerBorderColor = UIColor.blackColor()
+        colorBarGauge.innerBorderColor = UIColor.blackColor()
     }
 
     func setupRangeBarGauge() {
-
+        rangeBarGauge.numBars = 20
+        rangeBarGauge.minLimit = 0.4
+        rangeBarGauge.maxLimit = 0.6
     }
 
     func setupPeakBarGauge() {
-
+        peakBarGauge.holdPeak = true
     }
 
     func setupLCDBarGauge() {
-
+        lcdBarGauge.backgroundColor = UIColor.clearColor()
+        lcdBarGauge.numBars = 15
+        lcdBarGauge.normalColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+        lcdBarGauge.warnThreshold = 1.0
+        lcdBarGauge.dangerThreshold = 1.0
+        lcdBarGauge.outerBorderColor = UIColor(red: 128/255, green: 187/255, blue: 218/255, alpha: 1)
+        lcdBarGauge.innerBorderColor = UIColor(red: 128/255, green: 187/255, blue: 218/255, alpha: 1)
     }
 
     func appendBarGauges() {
@@ -94,5 +111,9 @@ class ViewController: UIViewController {
         barGauges.append(rangeBarGauge)
         barGauges.append(peakBarGauge)
         barGauges.append(lcdBarGauge)
+    }
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
 }
