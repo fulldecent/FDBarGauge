@@ -8,7 +8,7 @@ FDBarGuage
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=fulldecent/fdbarguage)](http://clayallsopp.github.io/readme-score?url=fulldecent/fdbarguage)
 
-![Screenshot](https://raw.github.com/ChiefPilot/F3BarGauge/master/F3BarGauge.png "Screenshot of Component Demo App")
+![Screenshot](https://raw.github.com/haydenholligan/FDBarGuage/master/FDBarGauge.png "Screenshot of Component Demo App")
 
 The successor to F3BarGuage
 
@@ -30,14 +30,21 @@ customized. Intended uses include:
 
 Usage
 -----
-Adding this control to your XCode project is straightforward :
-1.  Add the F3BarGauge.h and F3BarGauge.m files to your project
-2.  Add a new blank subview to the nib, sized and positioned to
+Adding this control to your XCode project is straightforward:
+
+1.  Add FDBarGauge.swift to your project
+
+2.  Add a new blank subview to your nib/storyboard, sized and positioned to
     match what the bar gauge should look like.
+
 3.  In the properties inspector for this subview, change the
-    class to "F3BarGauge"
-4.  Add an outlet to represent the bar gauge
-5.  Update your code to set the value property as appropriate.
+    class to "FDBarGauge"
+
+4.  Below class, change the module to "FDBarGauge"
+
+5.  Add an IBOutlet to your view controller
+
+6.  Update your code to set the value property as appropriate.
 
 For more information have a look at the demo code, which
 has multiple examples including a version that customizes the
