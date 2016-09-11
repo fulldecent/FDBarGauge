@@ -12,19 +12,19 @@ import Foundation
 import UIKit
 
 /// A view for showing a single number on an LED display
-@IBDesignable public class FDBarGauge: UIView {
+@IBDesignable open class FDBarGauge: UIView {
 
     /// Whether to maintain a view of local maximums
-    @IBInspectable public var holdPeak = false
+    @IBInspectable open var holdPeak = false
 
     /// This applies a gradient style to the rendering
-    @IBInspectable public var litEffect = true
+    @IBInspectable open var litEffect = true
 
     /// If `true` then render top-to-bottom or right-to-left
-    @IBInspectable public var reverseDirection = false
+    @IBInspectable open var reverseDirection = false
 
     /// The quantity to be rendered
-    @IBInspectable public var value = 0.0 {
+    @IBInspectable open var value = 0.0 {
         didSet {
             var redraw = false
             // Point at which bars start lighting up
@@ -52,18 +52,18 @@ import UIKit
     }
 
     /// The local maximum for `value`
-    @IBInspectable public var peakValue = 0.0
+    @IBInspectable open var peakValue = 0.0
 
     /// The highest possible amount for `value`
-    @IBInspectable public var maxLimit = 1.0
+    @IBInspectable open var maxLimit = 1.0
 
     /// The lowest possible amount for `value`, must be less than `maxLimit`
-    @IBInspectable public var minLimit = 0.0
+    @IBInspectable open var minLimit = 0.0
 
     /// A quantity for `value` which will render in a special color
-    @IBInspectable public var warnThreshold = 0.6 {
+    @IBInspectable open var warnThreshold = 0.6 {
         didSet {
-            if (!isnan(warnThreshold) && warnThreshold > 0.0) {
+            if !warnThreshold.isNaN && warnThreshold > 0.0 {
                 warningBarIdx = Int(warnThreshold * Double(numBars))
             } else {
                 warningBarIdx = -1
@@ -72,9 +72,9 @@ import UIKit
     }
 
     /// A quantity for `value` which will render in a special color
-    @IBInspectable public var dangerThreshold = 0.8 {
+    @IBInspectable open var dangerThreshold = 0.8 {
         didSet {
-            if (!isnan(dangerThreshold) && dangerThreshold > 0.0) {
+            if !dangerThreshold.isNaN && dangerThreshold > 0.0 {
                 dangerBarIdx = Int(dangerThreshold * Double(numBars))
             } else {
                 dangerBarIdx = -1
@@ -83,7 +83,7 @@ import UIKit
     }
 
     /// The number of discrete segments to render
-    @IBInspectable public var numBars: Int = 10 {
+    @IBInspectable open var numBars: Int = 10 {
         didSet {
             peakValue = -.infinity // force it to be updated w/new bar index
             // Update thresholds
@@ -94,30 +94,30 @@ import UIKit
     }
 
     /// Outside border color
-    @IBInspectable public var outerBorderColor = UIColor.grayColor()
+    @IBInspectable open var outerBorderColor = UIColor.gray
 
     /// Inside border color
-    @IBInspectable public var innerBorderColor = UIColor.blackColor()
+    @IBInspectable open var innerBorderColor = UIColor.black
 
     /// The rendered segment color before reaching the warning threshold
-    @IBInspectable public var normalColor = UIColor.greenColor()
+    @IBInspectable open var normalColor = UIColor.green
 
     /// The rendered segment color after reaching the warning threshold
-    @IBInspectable public var warningColor = UIColor.yellowColor()
+    @IBInspectable open var warningColor = UIColor.yellow
 
     /// The rendered segment color after reaching the danger threshold
-    @IBInspectable public var dangerColor = UIColor.redColor()
+    @IBInspectable open var dangerColor = UIColor.red
 
-    private var onIdx = 0
-    private var offIdx = 0
-    private var peakBarIdx = -1
-    private var warningBarIdx = 6
-    private var dangerBarIdx = 8
+    fileprivate var onIdx = 0
+    fileprivate var offIdx = 0
+    fileprivate var peakBarIdx = -1
+    fileprivate var warningBarIdx = 6
+    fileprivate var dangerBarIdx = 8
 
-    private func setup() {
+    fileprivate func setup() {
         clearsContextBeforeDrawing = false;
-        opaque = false;
-        backgroundColor = UIColor.blackColor()
+        isOpaque = false;
+        backgroundColor = UIColor.black
     }
 
     /// UIView initializer
@@ -140,8 +140,8 @@ import UIKit
     }
 
     /// Draw the guage
-    override public func drawRect(rect: CGRect) {
-        var ctx: CGContextRef
+    override open func draw(_ rect: CGRect) {
+        var ctx: CGContext
         // Graphics context
         var rectBounds: CGRect
         var rectBar = CGRect()
@@ -166,28 +166,28 @@ import UIKit
         rectBar.size.height = isVertical ? CGFloat(barSize) : rectBounds.size.height - 2
         // Get stuff needed for drawing
         ctx = UIGraphicsGetCurrentContext()!
-        CGContextClearRect(ctx, self.bounds)
+        ctx.clear(self.bounds)
         // Fill background
-        CGContextSetFillColorWithColor(ctx, backgroundColor!.CGColor)
-        CGContextFillRect(ctx, rectBounds)
+        ctx.setFillColor(backgroundColor!.cgColor)
+        ctx.fill(rectBounds)
         // Draw LED bars
-        CGContextSetStrokeColorWithColor(ctx, innerBorderColor.CGColor)
-        CGContextSetLineWidth(ctx, 1.0)
+        ctx.setStrokeColor(innerBorderColor.cgColor)
+        ctx.setLineWidth(1.0)
         for iX in 0..<numBars {
             // Determine position for this bar
             if reverseDirection {
                 // Top-to-bottom or right-to-left
-                rectBar.origin.x = (isVertical) ? rectBounds.origin.x + 1 : (CGRectGetMaxX(rectBounds) - CGFloat((iX + 1) * barSize))
-                rectBar.origin.y = (isVertical) ? (CGRectGetMinY(rectBounds) + CGFloat(iX * barSize)) : rectBounds.origin.y + 1
+                rectBar.origin.x = (isVertical) ? rectBounds.origin.x + 1 : (rectBounds.maxX - CGFloat((iX + 1) * barSize))
+                rectBar.origin.y = (isVertical) ? (rectBounds.minY + CGFloat(iX * barSize)) : rectBounds.origin.y + 1
             }
             else {
                 // Bottom-to-top or right-to-left
-                rectBar.origin.x = (isVertical) ? rectBounds.origin.x + 1 : (CGRectGetMinX(rectBounds) + CGFloat(iX * barSize))
-                rectBar.origin.y = (isVertical) ? (CGRectGetMaxY(rectBounds) - CGFloat((iX + 1) * barSize)) : rectBounds.origin.y + 1
+                rectBar.origin.x = (isVertical) ? rectBounds.origin.x + 1 : (rectBounds.minX + CGFloat(iX * barSize))
+                rectBar.origin.y = (isVertical) ? (rectBounds.maxY - CGFloat((iX + 1) * barSize)) : rectBounds.origin.y + 1
             }
             // Draw top and bottom borders for bar
-            CGContextAddRect(ctx, rectBar)
-            CGContextStrokePath(ctx)
+            ctx.addRect(rectBar)
+            ctx.strokePath()
             // Determine color of bar
             var clrFill: UIColor = normalColor
             if dangerBarIdx >= 0 && iX >= dangerBarIdx {
@@ -199,23 +199,23 @@ import UIKit
             // Determine if bar should be lit
             let lit: Bool = ((iX >= onIdx && iX < offIdx) || iX == peakBarIdx)
             // Fill the interior of the bar
-            CGContextSaveGState(ctx)
-            let rectFill: CGRect = CGRectInset(rectBar, 1.0, 1.0)
-            let clipPath: CGPathRef = CGPathCreateWithRect(rectFill, nil)
-            CGContextAddPath(ctx, clipPath)
-            CGContextClip(ctx)
+            ctx.saveGState()
+            let rectFill: CGRect = rectBar.insetBy(dx: 1.0, dy: 1.0)
+            let clipPath: CGPath = CGPath(rect: rectFill, transform: nil)
+            ctx.addPath(clipPath)
+            ctx.clip()
             self.drawBar(ctx, withRect: rectFill, andColor: clrFill, lit: lit)
-            CGContextRestoreGState(ctx)
+            ctx.restoreGState()
         }
         // Draw border around the control
-        CGContextSetStrokeColorWithColor(ctx, outerBorderColor.CGColor)
-        CGContextSetLineWidth(ctx, 2.0)
-        CGContextAddRect(ctx, CGRectInset(rectBounds, 1, 1))
-        CGContextStrokePath(ctx)
+        ctx.setStrokeColor(outerBorderColor.cgColor)
+        ctx.setLineWidth(2.0)
+        ctx.addRect(rectBounds.insetBy(dx: 1, dy: 1))
+        ctx.strokePath()
     }
 
     /// Draw one of the bar segments inside the guage
-    private func drawBar(a_ctx: CGContextRef, withRect a_rect: CGRect, andColor a_clr: UIColor, lit a_fLit: Bool) {
+    fileprivate func drawBar(_ a_ctx: CGContext, withRect a_rect: CGRect, andColor a_clr: UIColor, lit a_fLit: Bool) {
         // Is the bar lit?
         if a_fLit {
             // Are we doing radial gradient fills?
@@ -224,9 +224,9 @@ import UIKit
                 let num_locations: size_t = 2
                 let locations: [CGFloat] = [0.0, 0.5]
                 var aComponents = [CGFloat]()
-                let clr: CGColorRef = a_clr.CGColor
+                let clr: CGColor = a_clr.cgColor
                 // Set up color components from passed UIColor object
-                if CGColorGetNumberOfComponents(clr) == 4 {
+                if clr.numberOfComponents == 4 {
                     let ci = CIColor(color: a_clr)
                     aComponents.append(ci.red)
                     aComponents.append(ci.green)
@@ -240,30 +240,30 @@ import UIKit
                 }
 
                 // Calculate radius needed
-                let width: CGFloat = CGRectGetWidth(a_rect)
-                let height: CGFloat = CGRectGetHeight(a_rect)
+                let width: CGFloat = a_rect.width
+                let height: CGFloat = a_rect.height
                 let radius: CGFloat = sqrt(width * width + height * height)
 
                 // Draw the gradient inside the provided rectangle
-                let myColorspace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()!
-                let myGradient: CGGradientRef = CGGradientCreateWithColorComponents(myColorspace, aComponents, locations, num_locations)!
-                let myStartPoint = CGPoint(x: CGRectGetMidX(a_rect), y: CGRectGetMidY(a_rect))
-                CGContextDrawRadialGradient(a_ctx, myGradient, myStartPoint, 0.0, myStartPoint, radius, [])
+                let myColorspace: CGColorSpace = CGColorSpaceCreateDeviceRGB()
+                let myGradient: CGGradient = CGGradient(colorSpace: myColorspace, colorComponents: aComponents, locations: locations, count: num_locations)!
+                let myStartPoint = CGPoint(x: a_rect.midX, y: a_rect.midY)
+                a_ctx.drawRadialGradient(myGradient, startCenter: myStartPoint, startRadius: 0.0, endCenter: myStartPoint, endRadius: radius, options: [])
             }
             else {
                 // No, solid fill
-                CGContextSetFillColorWithColor(a_ctx, a_clr.CGColor)
-                CGContextFillRect(a_ctx, a_rect)
+                a_ctx.setFillColor(a_clr.cgColor)
+                a_ctx.fill(a_rect)
             }
         }
         else {
             // No, draw the bar as background color overlayed with a mostly
             // ... transparent version of the passed color
-            let fillClr: CGColorRef = CGColorCreateCopyWithAlpha(a_clr.CGColor, 0.2)!
-            CGContextSetFillColorWithColor(a_ctx, backgroundColor!.CGColor)
-            CGContextFillRect(a_ctx, a_rect)
-            CGContextSetFillColorWithColor(a_ctx, fillClr)
-            CGContextFillRect(a_ctx, a_rect)
+            let fillClr: CGColor = a_clr.cgColor.copy(alpha: 0.2)!
+            a_ctx.setFillColor(backgroundColor!.cgColor)
+            a_ctx.fill(a_rect)
+            a_ctx.setFillColor(fillClr)
+            a_ctx.fill(a_rect)
         }
     }
 }

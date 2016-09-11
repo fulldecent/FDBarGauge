@@ -29,17 +29,17 @@ class ViewController: UIViewController {
         self.setNeedsStatusBarAppearanceUpdate()
     }
 
-    @IBAction func sliderValueChanged(sender: UISlider) {
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
         valueLabel.text = String(sender.value.round(2))
         adjustBarGaugeValues(Double(sender.value))
 
     }
 
-    @IBAction func resetButtonTapped(sender: UIButton) {
+    @IBAction func resetButtonTapped(_ sender: UIButton) {
         peakBarGauge.resetPeak()
     }
 
-    func adjustBarGaugeValues(value: Double) {
+    func adjustBarGaugeValues(_ value: Double) {
         for gauge in barGauges {
             gauge.value = value
         }
@@ -76,11 +76,11 @@ class ViewController: UIViewController {
         colorBarGauge.warnThreshold = (6.0/15.0)
         colorBarGauge.dangerThreshold = (13.0/15.0)
 
-        colorBarGauge.normalColor = UIColor.blueColor()
-        colorBarGauge.warningColor = UIColor.cyanColor()
-        colorBarGauge.dangerColor = UIColor.magentaColor()
-        colorBarGauge.outerBorderColor = UIColor.blackColor()
-        colorBarGauge.innerBorderColor = UIColor.blackColor()
+        colorBarGauge.normalColor = UIColor.blue
+        colorBarGauge.warningColor = UIColor.cyan
+        colorBarGauge.dangerColor = UIColor.magenta
+        colorBarGauge.outerBorderColor = UIColor.black
+        colorBarGauge.innerBorderColor = UIColor.black
     }
 
     func setupRangeBarGauge() {
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
     }
 
     func setupLCDBarGauge() {
-        lcdBarGauge.backgroundColor = UIColor.clearColor()
+        lcdBarGauge.backgroundColor = UIColor.clear
         lcdBarGauge.numBars = 15
         lcdBarGauge.normalColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
         lcdBarGauge.warnThreshold = 1.0
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
         barGauges.append(lcdBarGauge)
     }
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
 }

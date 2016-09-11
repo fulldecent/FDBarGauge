@@ -49,15 +49,15 @@ class FDBarGuageTests: XCTestCase {
         XCTAssert(barGuage.dangerThreshold == 1.0)
         barGuage.numBars = 10
         XCTAssert(barGuage.numBars == 10)
-        barGuage.outerBorderColor = UIColor.blackColor()
-        XCTAssert(barGuage.outerBorderColor == UIColor.blackColor())
-        barGuage.innerBorderColor = UIColor.blackColor()
-        XCTAssert(barGuage.innerBorderColor == UIColor.blackColor())
-        barGuage.normalColor = UIColor.blackColor()
-        XCTAssert(barGuage.normalColor == UIColor.blackColor())
-        barGuage.warningColor = UIColor.blackColor()
-        XCTAssert(barGuage.warningColor == UIColor.blackColor())
-        barGuage.dangerColor = UIColor.blackColor()
-        XCTAssert(barGuage.dangerColor == UIColor.blackColor())
+        barGuage.outerBorderColor = UIColor.black
+        XCTAssert(barGuage.outerBorderColor == UIColor.black)
+        barGuage.innerBorderColor = UIColor.black
+        XCTAssert(barGuage.innerBorderColor == UIColor.black)
+        barGuage.normalColor = UIColor.black
+        XCTAssert(barGuage.normalColor == UIColor.black)
+        barGuage.warningColor = UIColor.black
+        XCTAssert(barGuage.warningColor == UIColor.black)
+        barGuage.dangerColor = UIColor.black
+        XCTAssert(barGuage.dangerColor == UIColor.black)
     }
 }
