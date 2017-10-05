@@ -4,7 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [Master](https://github.com/fulldecent/FDBarGuage/compare/2.0.0...master)
+## [Master](https://github.com/fulldecent/FDBarGuage/compare/3.0.0...master)
+
+---
+
+## [3.0.0](https://github.com/fulldecent/FDBarGuage/releases/tag/3.0.0)
+Released on 2017-10-05.
+
+#### Updated
+- Update project to Swift 4
 
 ---
 
