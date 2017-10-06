@@ -1,16 +1,16 @@
-FDBarGuage
+FDBarGauge
 ==========
 
-[![CI Status](http://img.shields.io/travis/fulldecent/FDBarGuage.svg?style=flat)](https://travis-ci.org/fulldecent/FDBarGuage)
-[![Version](https://img.shields.io/cocoapods/v/FDBarGuage.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGuage)
-[![License](https://img.shields.io/cocoapods/l/FDBarGuage.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGuage)
-[![Platform](https://img.shields.io/cocoapods/p/FDBarGuage.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGuage)
+[![CI Status](http://img.shields.io/travis/fulldecent/FDBarGauge.svg?style=flat)](https://travis-ci.org/fulldecent/FDBarGauge)
+[![Version](https://img.shields.io/cocoapods/v/FDBarGauge.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGauge)
+[![License](https://img.shields.io/cocoapods/l/FDBarGauge.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGauge)
+[![Platform](https://img.shields.io/cocoapods/p/FDBarGauge.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGauge)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=fulldecent/fdbarguage)](http://clayallsopp.github.io/readme-score?url=fulldecent/fdbarguage)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=fulldecent/fdbargauge)](http://clayallsopp.github.io/readme-score?url=fulldecent/fdbargauge)
 
-![Screenshot](https://raw.github.com/haydenholligan/FDBarGuage/master/FDBarGauge.png "Screenshot of Component Demo App")
+![Screenshot](https://raw.github.com/haydenholligan/FDBarGauge/master/FDBarGauge.png "Screenshot of Component Demo App")
 
-The successor to F3BarGuage
+The successor to F3BarGauge
 
 
 Background
@@ -110,16 +110,16 @@ Installation
 $ gem install cocoapods
 ```
 
-> CocoaPods 0.39.0+ is required to build FDBarGuage 0.1.0+.
+> CocoaPods 0.39.0+ is required to build FDBarGauge 0.1.0+.
 
-To integrate FDBarGuage into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate FDBarGauge into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
-pod 'FDBarGuage'
+pod 'FDBarGauge'
 ```
 
 Then, run the following command:
@@ -139,13 +139,13 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate FDBarGuage into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate FDBarGauge into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "fulldecent/FDBarGuage" ~> 0.1
+github "fulldecent/FDBarGauge" ~> 0.1
 ```
 
-Run `carthage update` to build the framework and drag the built `FDBarGuage.framework` into your Xcode project.
+Run `carthage update` to build the framework and drag the built `FDBarGauge.framework` into your Xcode project.
 
 
 

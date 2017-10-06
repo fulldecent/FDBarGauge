@@ -1,6 +1,5 @@
 //
-//  FDBarGuage.swift
-//  Echo
+//  FDBarGauge.swift
 //
 //  Created by William Entriken on 1/12/16.
 //
@@ -139,7 +138,7 @@ import UIKit
         self.setNeedsDisplay()
     }
 
-    /// Draw the guage
+    /// Draw the gauge
     override open func draw(_ rect: CGRect) {
         var ctx: CGContext
         // Graphics context
@@ -214,7 +213,7 @@ import UIKit
         ctx.strokePath()
     }
 
-    /// Draw one of the bar segments inside the guage
+    /// Draw one of the bar segments inside the gauge
     fileprivate func drawBar(_ a_ctx: CGContext, withRect a_rect: CGRect, andColor a_clr: UIColor, lit a_fLit: Bool) {
         // Is the bar lit?
         if a_fLit {

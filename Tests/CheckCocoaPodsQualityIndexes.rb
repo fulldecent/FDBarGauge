@@ -3,15 +3,15 @@
 # The validates that all controllable quality metrics receive maximum score
 #
 # Metrics are at: https://guides.cocoapods.org/making/quality-indexes.html
-# Your modifiers are at: https://cocoadocs-api-cocoapods-org.herokuapp.com/pods/FDBarGuage/stats
-# Your raw data is at: http://metrics.cocoapods.org/api/v1/pods/FDBarGuage
+# Your modifiers are at: https://cocoadocs-api-cocoapods-org.herokuapp.com/pods/FDBarGauge/stats
+# Your raw data is at: http://metrics.cocoapods.org/api/v1/pods/FDBarGauge
 #
 
 require "json"
 require "uri"
 require "net/http"
 
-uri = URI.parse('https://cocoadocs-api-cocoapods-org.herokuapp.com/pods/FDBarGuage/stats')
+uri = URI.parse('https://cocoadocs-api-cocoapods-org.herokuapp.com/pods/FDBarGauge/stats')
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true if uri.scheme == 'https'
 request = Net::HTTP::Get.new uri

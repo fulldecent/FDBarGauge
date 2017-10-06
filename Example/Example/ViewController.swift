@@ -1,6 +1,5 @@
 //
 //  ViewController.swift
-//  UpdateFDBarGuage
 //
 //  Created by Hayden on 2016-09-01.
 //  Copyright © 2016 Hayden. All rights reserved.

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9223AE51CD81E5B00F097E4 /* FDBarGuageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223AE41CD81E5B00F097E4 /* FDBarGuageTests.swift */; };
-		D9223AE71CD81E5B00F097E4 /* FDBarGuage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */; };
-		D94BE1CF1CCEBFD80042282A /* FDBarGuage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94BE1CE1CCEBFD80042282A /* FDBarGuage.swift */; };
+		D9223AE51CD81E5B00F097E4 /* FDBarGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223AE41CD81E5B00F097E4 /* FDBarGaugeTests.swift */; };
+		D9223AE71CD81E5B00F097E4 /* FDBarGauge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FEF4B41CCEBC0D0013FBDD /* FDBarGauge.framework */; };
+		D94BE1CF1CCEBFD80042282A /* FDBarGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94BE1CE1CCEBFD80042282A /* FDBarGauge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,16 +18,16 @@
 			containerPortal = D9FEF4AB1CCEBC0D0013FBDD /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D9FEF4B31CCEBC0D0013FBDD;
-			remoteInfo = FDBarGuage;
+			remoteInfo = FDBarGauge;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D9223AE21CD81E5B00F097E4 /* FDBarGuageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDBarGuageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9223AE41CD81E5B00F097E4 /* FDBarGuageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBarGuageTests.swift; sourceTree = "<group>"; };
+		D9223AE21CD81E5B00F097E4 /* FDBarGaugeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDBarGaugeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9223AE41CD81E5B00F097E4 /* FDBarGaugeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBarGaugeTests.swift; sourceTree = "<group>"; };
 		D9223AE61CD81E5B00F097E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D94BE1CE1CCEBFD80042282A /* FDBarGuage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDBarGuage.swift; sourceTree = "<group>"; };
-		D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDBarGuage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94BE1CE1CCEBFD80042282A /* FDBarGauge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDBarGauge.swift; sourceTree = "<group>"; };
+		D9FEF4B41CCEBC0D0013FBDD /* FDBarGauge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FDBarGauge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FEF4B91CCEBC0D0013FBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9223AE71CD81E5B00F097E4 /* FDBarGuage.framework in Frameworks */,
+				D9223AE71CD81E5B00F097E4 /* FDBarGauge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,7 @@
 		D9223AE31CD81E5B00F097E4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D9223AE41CD81E5B00F097E4 /* FDBarGuageTests.swift */,
+				D9223AE41CD81E5B00F097E4 /* FDBarGaugeTests.swift */,
 				D9223AE61CD81E5B00F097E4 /* Info.plist */,
 			);
 			path = Tests;
@@ -71,8 +71,8 @@
 		D9FEF4B51CCEBC0D0013FBDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */,
-				D9223AE21CD81E5B00F097E4 /* FDBarGuageTests.xctest */,
+				D9FEF4B41CCEBC0D0013FBDD /* FDBarGauge.framework */,
+				D9223AE21CD81E5B00F097E4 /* FDBarGaugeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,7 +80,7 @@
 		D9FEF4B61CCEBC0D0013FBDD /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D94BE1CE1CCEBFD80042282A /* FDBarGuage.swift */,
+				D94BE1CE1CCEBFD80042282A /* FDBarGauge.swift */,
 				D9FEF4B91CCEBC0D0013FBDD /* Info.plist */,
 			);
 			path = Source;
@@ -99,9 +99,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D9223AE11CD81E5B00F097E4 /* FDBarGuageTests */ = {
+		D9223AE11CD81E5B00F097E4 /* FDBarGaugeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9223AEA1CD81E5B00F097E4 /* Build configuration list for PBXNativeTarget "FDBarGuageTests" */;
+			buildConfigurationList = D9223AEA1CD81E5B00F097E4 /* Build configuration list for PBXNativeTarget "FDBarGaugeTests" */;
 			buildPhases = (
 				D9223ADE1CD81E5B00F097E4 /* Sources */,
 				D9223ADF1CD81E5B00F097E4 /* Frameworks */,
@@ -112,14 +112,14 @@
 			dependencies = (
 				D9223AE91CD81E5B00F097E4 /* PBXTargetDependency */,
 			);
-			name = FDBarGuageTests;
-			productName = FDBarGuageTests;
-			productReference = D9223AE21CD81E5B00F097E4 /* FDBarGuageTests.xctest */;
+			name = FDBarGaugeTests;
+			productName = FDBarGaugeTests;
+			productReference = D9223AE21CD81E5B00F097E4 /* FDBarGaugeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D9FEF4B31CCEBC0D0013FBDD /* FDBarGuage */ = {
+		D9FEF4B31CCEBC0D0013FBDD /* FDBarGauge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "FDBarGuage" */;
+			buildConfigurationList = D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "FDBarGauge" */;
 			buildPhases = (
 				D9FEF4AF1CCEBC0D0013FBDD /* Sources */,
 				D9FEF4B01CCEBC0D0013FBDD /* Frameworks */,
@@ -130,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = FDBarGuage;
-			productName = FDBarGuage;
-			productReference = D9FEF4B41CCEBC0D0013FBDD /* FDBarGuage.framework */;
+			name = FDBarGauge;
+			productName = FDBarGauge;
+			productReference = D9FEF4B41CCEBC0D0013FBDD /* FDBarGauge.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "FDBarGuage" */;
+			buildConfigurationList = D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "FDBarGauge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -168,8 +168,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9FEF4B31CCEBC0D0013FBDD /* FDBarGuage */,
-				D9223AE11CD81E5B00F097E4 /* FDBarGuageTests */,
+				D9FEF4B31CCEBC0D0013FBDD /* FDBarGauge */,
+				D9223AE11CD81E5B00F097E4 /* FDBarGaugeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9223AE51CD81E5B00F097E4 /* FDBarGuageTests.swift in Sources */,
+				D9223AE51CD81E5B00F097E4 /* FDBarGaugeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94BE1CF1CCEBFD80042282A /* FDBarGuage.swift in Sources */,
+				D94BE1CF1CCEBFD80042282A /* FDBarGauge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +213,7 @@
 /* Begin PBXTargetDependency section */
 		D9223AE91CD81E5B00F097E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D9FEF4B31CCEBC0D0013FBDD /* FDBarGuage */;
+			target = D9FEF4B31CCEBC0D0013FBDD /* FDBarGauge */;
 			targetProxy = D9223AE81CD81E5B00F097E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -225,7 +225,7 @@
 				DEVELOPMENT_TEAM = 8Q693ZG5RN;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGuage.FDBarGuageTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGauge.FDBarGaugeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -238,7 +238,7 @@
 				DEVELOPMENT_TEAM = 8Q693ZG5RN;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGuage.FDBarGuageTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGauge.FDBarGaugeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -365,8 +365,8 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGuage;
-				PRODUCT_NAME = FDBarGuage;
+				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGauge;
+				PRODUCT_NAME = FDBarGauge;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -385,8 +385,8 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGuage;
-				PRODUCT_NAME = FDBarGuage;
+				PRODUCT_BUNDLE_IDENTIFIER = net.phor.FDBarGauge;
+				PRODUCT_NAME = FDBarGauge;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
@@ -395,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9223AEA1CD81E5B00F097E4 /* Build configuration list for PBXNativeTarget "FDBarGuageTests" */ = {
+		D9223AEA1CD81E5B00F097E4 /* Build configuration list for PBXNativeTarget "FDBarGaugeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9223AEB1CD81E5B00F097E4 /* Debug */,
@@ -404,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "FDBarGuage" */ = {
+		D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "FDBarGauge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9FEF4C61CCEBC100013FBDD /* Debug */,
@@ -413,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "FDBarGuage" */ = {
+		D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "FDBarGauge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9FEF4C91CCEBC100013FBDD /* Debug */,

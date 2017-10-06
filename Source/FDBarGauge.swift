@@ -1,5 +1,5 @@
 //
-//  FDBarGuage.swift
+//  FDBarGauge.swift
 //  Echo
 //
 //  Created by William Entriken on 1/12/16.
@@ -12,7 +12,8 @@ import Foundation
 import UIKit
 
 /// A view for showing a single number on an LED display
-@IBDesignable open class FDBarGauge: UIView {
+@IBDesignable open class FDBarGau
+ge: UIView {
 
     /// Whether to maintain a view of local maximums
     @IBInspectable open var holdPeak = false
@@ -139,7 +140,7 @@ import UIKit
         self.setNeedsDisplay()
     }
 
-    /// Draw the guage
+    /// Draw the gauge
     override open func draw(_ rect: CGRect) {
         var ctx: CGContext
         // Graphics context
@@ -214,7 +215,7 @@ import UIKit
         ctx.strokePath()
     }
 
-    /// Draw one of the bar segments inside the guage
+    /// Draw one of the bar segments inside the gauge
     fileprivate func drawBar(_ a_ctx: CGContext, withRect a_rect: CGRect, andColor a_clr: UIColor, lit a_fLit: Bool) {
         // Is the bar lit?
         if a_fLit {

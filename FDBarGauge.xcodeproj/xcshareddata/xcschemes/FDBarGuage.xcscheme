@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D9FEF4B31CCEBC0D0013FBDD"
-               BuildableName = "FDBarGuage.framework"
-               BlueprintName = "FDBarGuage"
-               ReferencedContainer = "container:FDBarGuage.xcodeproj">
+               BuildableName = "FDBarGauge.framework"
+               BlueprintName = "FDBarGauge"
+               ReferencedContainer = "container:FDBarGauge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D9223AE11CD81E5B00F097E4"
-               BuildableName = "FDBarGuageTests.xctest"
-               BlueprintName = "FDBarGuageTests"
-               ReferencedContainer = "container:FDBarGuage.xcodeproj">
+               BuildableName = "FDBarGaugeTests.xctest"
+               BlueprintName = "FDBarGaugeTests"
+               ReferencedContainer = "container:FDBarGauge.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D9FEF4B31CCEBC0D0013FBDD"
-            BuildableName = "FDBarGuage.framework"
-            BlueprintName = "FDBarGuage"
-            ReferencedContainer = "container:FDBarGuage.xcodeproj">
+            BuildableName = "FDBarGauge.framework"
+            BlueprintName = "FDBarGauge"
+            ReferencedContainer = "container:FDBarGauge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D9FEF4B31CCEBC0D0013FBDD"
-            BuildableName = "FDBarGuage.framework"
-            BlueprintName = "FDBarGuage"
-            ReferencedContainer = "container:FDBarGuage.xcodeproj">
+            BuildableName = "FDBarGauge.framework"
+            BlueprintName = "FDBarGauge"
+            ReferencedContainer = "container:FDBarGauge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D9FEF4B31CCEBC0D0013FBDD"
-            BuildableName = "FDBarGuage.framework"
-            BlueprintName = "FDBarGuage"
-            ReferencedContainer = "container:FDBarGuage.xcodeproj">
+            BuildableName = "FDBarGauge.framework"
+            BlueprintName = "FDBarGauge"
+            ReferencedContainer = "container:FDBarGauge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

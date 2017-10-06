@@ -1,6 +1,5 @@
 //
 //  Double+Round.swift
-//  UpdateFDBarGuage
 //
 //  Created by Hayden on 2016-09-03.
 //  Copyright © 2016 Hayden. All rights reserved.
