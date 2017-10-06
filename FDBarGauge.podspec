@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/fulldecent/FDBarGauge.git', :tag => s.version }
   s.ios.deployment_target = '8.0'
   s.source_files = 'Source/*.swift'
-  s.build_settings['SWIFT_VERSION'] = '4.0' #https://github.com/Alamofire/Alamofire/issues/1526
+  s.build_settings['SWIFT_VERSION'] = '4.0'
 end
