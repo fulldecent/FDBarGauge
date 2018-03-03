@@ -12,8 +12,7 @@ import Foundation
 import UIKit
 
 /// A view for showing a single number on an LED display
-@IBDesignable open class FDBarGau
-ge: UIView {
+@IBDesignable open class FDBarGauge: UIView {
 
     /// Whether to maintain a view of local maximums
     @IBInspectable open var holdPeak = false
