@@ -4,7 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [Master](https://github.com/fulldecent/FDBarGauge/compare/3.0.0...master)
+## [Master](https://github.com/fulldecent/FDBarGauge/compare/4.0.0...master)
+
+---
+
+## [4.0.0](https://github.com/fulldecent/FDBarGauge/releases/tag/4.0.0)
+Released on 2019-04-09.
+
+#### Updated
+- Update project to Swift 5
 
 ---
 

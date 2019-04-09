@@ -7,5 +7,6 @@ Pod::Spec.new do |s|
   s.authors = { 'William Entriken' => 'github.com@phor.net' }
   s.source = { :git => 'https://github.com/fulldecent/FDBarGauge.git', :tag => s.version }
   s.ios.deployment_target = '8.0'
+  s.swift_version = '5.0'
   s.source_files = 'Source/*.swift'
 end
