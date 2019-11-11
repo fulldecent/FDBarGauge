@@ -1,58 +1,57 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Systems Bar Gauge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62h-wM-Vo3">
-                                <rect key="frame" x="71" y="20" width="232" height="21"/>
+                                <rect key="frame" x="95" y="44" width="224" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-NU-bS4" userLabel="Left Bar Gauge" customClass="FDBarGauge" customModule="Example">
-                                <rect key="frame" x="16" y="52" width="54" height="540"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-NU-bS4" userLabel="Left Bar Gauge" customClass="FDBarGauge" customModule="FDBarGuage">
+                                <rect key="frame" x="20" y="76" width="50" height="516"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lDu-do-3gY">
-                                <rect key="frame" x="90" y="52" width="273" height="540"/>
+                                <rect key="frame" x="90" y="76" width="308" height="516"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJC-Pk-HI3" userLabel="Default View">
-                                        <rect key="frame" x="0.0" y="0.0" width="273" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="69.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Horizontal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43c-sl-9Pr">
-                                                <rect key="frame" x="0.0" y="0.0" width="273" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="308" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="i8l-gu-ziw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPf-a7-2aF" customClass="FDBarGauge" customModule="Example">
-                                                <rect key="frame" x="0.0" y="21" width="273" height="27.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPf-a7-2aF" customClass="FDBarGauge" customModule="FDBarGuage">
+                                                <rect key="frame" x="0.0" y="21" width="308" height="31"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="UPf-a7-2aF" secondAttribute="height" multiplier="10:1" id="xzo-IN-DPb"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="UPf-a7-2aF" secondAttribute="trailing" id="PAK-Ow-DS3"/>
                                             <constraint firstItem="43c-sl-9Pr" firstAttribute="leading" secondItem="NJC-Pk-HI3" secondAttribute="leading" id="gKq-ww-X3m"/>
@@ -63,26 +62,26 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4s-cP-TPy" userLabel="Default View">
-                                        <rect key="frame" x="0.0" y="93.5" width="273" height="73"/>
+                                        <rect key="frame" x="0.0" y="89.5" width="308" height="69"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reversed (right-to-left)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79O-IM-Pll">
-                                                <rect key="frame" x="0.0" y="0.0" width="273" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="308" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="lUk-8f-440"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdq-Sr-p2i" customClass="FDBarGauge" customModule="Example">
-                                                <rect key="frame" x="0.0" y="21" width="273" height="27"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdq-Sr-p2i" customClass="FDBarGauge" customModule="FDBarGuage">
+                                                <rect key="frame" x="0.0" y="21" width="308" height="30.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Mdq-Sr-p2i" secondAttribute="height" multiplier="10:1" id="Wyi-A1-va8"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="79O-IM-Pll" firstAttribute="top" secondItem="U4s-cP-TPy" secondAttribute="top" id="0Ny-iJ-KJz"/>
                                             <constraint firstItem="Mdq-Sr-p2i" firstAttribute="leading" secondItem="U4s-cP-TPy" secondAttribute="leading" id="7E7-1v-llf"/>
@@ -93,26 +92,26 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVZ-oJ-Xof" userLabel="Default View">
-                                        <rect key="frame" x="0.0" y="186.5" width="273" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="178.5" width="308" height="69.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Thresholds &amp; Colors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1by-gA-acw">
-                                                <rect key="frame" x="0.0" y="0.0" width="273" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="308" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Jfg-8x-1RW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brk-pS-BP8" customClass="FDBarGauge" customModule="Example">
-                                                <rect key="frame" x="0.0" y="21" width="273" height="27.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brk-pS-BP8" customClass="FDBarGauge" customModule="FDBarGuage">
+                                                <rect key="frame" x="0.0" y="21" width="308" height="31"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Brk-pS-BP8" secondAttribute="height" multiplier="10:1" id="xG8-3F-a8h"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Brk-pS-BP8" firstAttribute="top" secondItem="1by-gA-acw" secondAttribute="bottom" id="XrM-Uo-DZ5"/>
                                             <constraint firstAttribute="trailing" secondItem="Brk-pS-BP8" secondAttribute="trailing" id="Znw-y7-M1A"/>
@@ -123,26 +122,26 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NyT-7W-0Lw" userLabel="Default View">
-                                        <rect key="frame" x="0.0" y="280" width="273" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="268" width="308" height="69.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Ranges" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY8-wY-qaY">
-                                                <rect key="frame" x="0.0" y="0.0" width="273" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="308" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Nak-lC-bIp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-7t-4Dz" customClass="FDBarGauge" customModule="Example">
-                                                <rect key="frame" x="0.0" y="21" width="273" height="27.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-7t-4Dz" customClass="FDBarGauge" customModule="FDBarGuage">
+                                                <rect key="frame" x="0.0" y="21" width="308" height="31"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wWF-7t-4Dz" secondAttribute="height" multiplier="10:1" id="NGa-mv-dz9"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="wWF-7t-4Dz" firstAttribute="leading" secondItem="NyT-7W-0Lw" secondAttribute="leading" id="C0B-IV-fCB"/>
                                             <constraint firstItem="wWF-7t-4Dz" firstAttribute="top" secondItem="TY8-wY-qaY" secondAttribute="bottom" id="Egy-Xk-GWn"/>
@@ -153,11 +152,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-Fd-nK6" userLabel="Default View">
-                                        <rect key="frame" x="0.0" y="373.5" width="273" height="73"/>
+                                        <rect key="frame" x="0.0" y="357.5" width="308" height="69"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95a-02-h24">
-                                                <rect key="frame" x="218" y="21" width="50" height="20"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="253" y="23" width="50" height="20"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="Qex-Cv-8pN"/>
                                                     <constraint firstAttribute="width" constant="50" id="gj4-a7-pwe"/>
@@ -174,23 +173,23 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peak Hold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1o-G4-Ey3">
-                                                <rect key="frame" x="0.0" y="0.0" width="273" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="308" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="VQv-Rn-oin"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-wT-on9" customClass="FDBarGauge" customModule="Example">
-                                                <rect key="frame" x="0.0" y="21" width="213" height="21"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-wT-on9" customClass="FDBarGauge" customModule="FDBarGuage">
+                                                <rect key="frame" x="0.0" y="21" width="248" height="24.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wg9-wT-on9" secondAttribute="height" multiplier="10:1" id="LVz-ap-fVo"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="t1o-G4-Ey3" secondAttribute="trailing" id="2c3-Oy-bjW"/>
                                             <constraint firstItem="95a-02-h24" firstAttribute="leading" secondItem="wg9-wT-on9" secondAttribute="trailing" constant="5" id="AdW-7J-8p8"/>
@@ -203,29 +202,29 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aww-Ie-TbG" userLabel="Default View">
-                                        <rect key="frame" x="0.0" y="466.5" width="273" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="446.5" width="308" height="69.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LCD-ish Look" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBV-mY-cW1">
-                                                <rect key="frame" x="0.0" y="0.0" width="273" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="308" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="ZNb-K2-ldX"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0D-bC-l36" userLabel="Background">
-                                                <rect key="frame" x="0.0" y="26" width="273" height="47"/>
+                                                <rect key="frame" x="0.0" y="26" width="308" height="43.5"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="196-EU-FRC" customClass="FDBarGauge" customModule="Example">
-                                                        <rect key="frame" x="10" y="5" width="256" height="36.5"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="196-EU-FRC" customClass="FDBarGauge" customModule="FDBarGuage">
+                                                        <rect key="frame" x="10" y="1" width="291" height="41.5"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="196-EU-FRC" secondAttribute="height" multiplier="7:1" id="mIu-1u-be0"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.50196078431372548" green="0.73333333333333328" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.50196078431372548" green="0.73333333333333328" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="196-EU-FRC" firstAttribute="centerY" secondItem="P0D-bC-l36" secondAttribute="centerY" id="240-DA-jpw"/>
                                                     <constraint firstAttribute="trailing" secondItem="196-EU-FRC" secondAttribute="trailing" constant="7" id="Vuy-yi-mKM"/>
@@ -233,7 +232,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="P0D-bC-l36" secondAttribute="bottom" id="4eV-UL-iSn"/>
                                             <constraint firstItem="P0D-bC-l36" firstAttribute="top" secondItem="uBV-mY-cW1" secondAttribute="bottom" constant="5" id="Vic-C4-0gP"/>
@@ -247,34 +246,34 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LmV-cT-b3Z" userLabel="Value View">
-                                <rect key="frame" x="16" y="612" width="343" height="40"/>
+                                <rect key="frame" x="20" y="612" width="374" height="235"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX8-Gg-jAl">
-                                        <rect key="frame" x="0.0" y="9" width="50" height="21"/>
+                                        <rect key="frame" x="0.0" y="107.5" width="50" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="9MJ-YM-sIc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.59999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RN3-Sc-n7y">
-                                        <rect key="frame" x="48" y="5" width="247" height="31"/>
+                                        <rect key="frame" x="48" y="102.5" width="278" height="31"/>
                                         <connections>
                                             <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="apV-RZ-0xy"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKe-KT-NWQ">
-                                        <rect key="frame" x="303" y="10" width="40" height="20"/>
+                                        <rect key="frame" x="334" y="107.5" width="40" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="fbY-Ze-X3M"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.90196078431372551" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.90196078431372551" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="JKe-KT-NWQ" firstAttribute="centerY" secondItem="RN3-Sc-n7y" secondAttribute="centerY" id="0GV-QC-M42"/>
                                     <constraint firstItem="eX8-Gg-jAl" firstAttribute="centerY" secondItem="RN3-Sc-n7y" secondAttribute="centerY" id="EMT-yd-wZx"/>
@@ -286,7 +285,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lDu-do-3gY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="90" id="3xi-Qs-jHg"/>
                             <constraint firstItem="jzb-NU-bS4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="69m-Cp-Nh4"/>
@@ -305,7 +304,6 @@
                             <constraint firstItem="lDu-do-3gY" firstAttribute="leading" secondItem="jzb-NU-bS4" secondAttribute="trailing" constant="20" id="xyj-nJ-uvG"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="colorBarGauge" destination="Brk-pS-BP8" id="VIu-kb-0Ty"/>
                         <outlet property="defaultBarGauge" destination="UPf-a7-2aF" id="x2E-xz-RHZ"/>

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/williamentriken/Developer/FDBarGauge/FDBarGauge.xcodeproj">
+      location = "container:iOS Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:..">
    </FileRef>
 </Workspace>

@@ -7,6 +7,8 @@
 
 import UIKit
 
+import FDBarGuage
+
 class ViewController: UIViewController {
 
     @IBOutlet var leftBarGauge: FDBarGauge!
@@ -29,9 +31,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sliderValueChanged(_ sender: UISlider) {
-        valueLabel.text = String(sender.value.round(2))
+        valueLabel.text = String(format: "%0.2f", sender.value)
         adjustBarGaugeValues(Double(sender.value))
-
     }
 
     @IBAction func resetButtonTapped(_ sender: UIButton) {

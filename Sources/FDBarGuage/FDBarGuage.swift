@@ -1,5 +1,6 @@
 //
 //  FDBarGauge.swift
+//  Echo
 //
 //  Created by William Entriken on 1/12/16.
 //
@@ -132,7 +133,7 @@ import UIKit
     }
 
     /// Resets peak value
-    func resetPeak() {
+    public func resetPeak() {
         peakValue = -.infinity
         peakBarIdx = -1
         self.setNeedsDisplay()

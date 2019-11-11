@@ -15,13 +15,7 @@ The successor to F3BarGauge
 
 Background
 ----------
-This control is intended to replicate/simulate the level indicator
-on an audio mixing board.   These indicators are usually
-segmented/stacked LEDs, with several colors to indicate thresholds.
-This control replicates that look, using Quartz drawing primitives,
-and auto-adjusts to horizontal or vertical orientation. Additionally,
-the colors, number of bars, peak hold, and other items are easily
-customized. Intended uses include:
+This control is intended to replicate/simulate the level indicator on an audio mixing board. These indicators are usually segmented/stacked LEDs, with several colors to indicate thresholds. This control replicates that look, using Quartz drawing primitives, and auto-adjusts to horizontal or vertical orientation. Additionally, the colors, number of bars, peak hold, and other items are easily customized. Intended uses include:
 
  * Realtime data visualization
  * Level bars
@@ -34,21 +28,17 @@ Adding this control to your XCode project is straightforward:
 
 1.  Add FDBarGauge.swift to your project
 
-2.  Add a new blank subview to your nib/storyboard, sized and positioned to
-    match what the bar gauge should look like.
-
-3.  In the properties inspector for this subview, change the
-    class to "FDBarGauge"
-
+2.  Add a new blank subview to your nib/storyboard, sized and positioned to match what the bar gauge should look like.
+    
+3.  In the properties inspector for this subview, change the class to "FDBarGauge"
+    
 4.  Below class, change the module to "FDBarGauge"
 
 5.  Add an IBOutlet to your view controller
 
 6.  Update your code to set the value property as appropriate.
 
-For more information have a look at the demo code, which
-has multiple examples including a version that customizes the
-with an LCD-style appearance.
+For more information have a look at the demo code, which has multiple examples including a version that customizes the with an LCD-style appearance.
 
 Following are all of the customizable properties:
 
@@ -102,55 +92,12 @@ Following are all of the customizable properties:
 Installation
 ------------
 
-### CocoaPods
-
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
-
-```bash
-$ gem install cocoapods
-```
-
-> CocoaPods 0.39.0+ is required to build FDBarGauge 0.1.0+.
-
-To integrate FDBarGauge into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
-use_frameworks!
-
-pod 'FDBarGauge'
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
-
-### Carthage
-
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
-
-You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
-
-```bash
-$ brew update
-$ brew install carthage
-```
-
-To integrate FDBarGauge into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```ogdl
-github "fulldecent/FDBarGauge" ~> 0.1
-```
-
-Run `carthage update` to build the framework and drag the built `FDBarGauge.framework` into your Xcode project.
-
-
+Use Swift Package Manager. In Xcode use: File > Swift Packages > Add Package Dependency…
 
 License
 -------
 Copyright (c) 2016 William Entriken
-Copyright (c) 2011-2014 by Brad Benson
-This is released under the MIT licence. Please see the file COPYING for details.
+
+Copyright (c) 2011–2014 by Brad Benson
+
+This is released under the MIT licence. Please see the file LICENSE for details.

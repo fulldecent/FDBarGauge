@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Master](https://github.com/fulldecent/FDBarGauge/compare/4.0.0...master)
 
+#### Added
+
+* Use Swift 5 Module Template format
+
 ---
 
 ## [4.0.0](https://github.com/fulldecent/FDBarGauge/releases/tag/4.0.0)
@@ -59,7 +63,6 @@ Released on 2016-06-26.
 - README added full API documentation
   -  by [William Entriken](https://github.com/fulldecent) in Regards to Issue
   [#6](https://github.com/fulldecent/FDBarGauge/issues/6).
-
 
 ---
 

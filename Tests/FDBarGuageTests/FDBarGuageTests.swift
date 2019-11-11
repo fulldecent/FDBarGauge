@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import FDBarGauge
+@testable import FDBarGuage
 
 class FDBarGaugeTests: XCTestCase {
     
