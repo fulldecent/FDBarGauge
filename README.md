@@ -8,7 +8,7 @@ FDBarGauge
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=fulldecent/fdbargauge)](http://clayallsopp.github.io/readme-score?url=fulldecent/fdbargauge)
 
-![Screenshot](https://raw.github.com/haydenholligan/FDBarGauge/master/FDBarGauge.png "Screenshot of Component Demo App")
+![Screenshot](https://raw.github.com/haydenholligan/FDBarGauge/master/FDBarGauge.gif "Screenshot of Component Demo App")
 
 The successor to F3BarGauge
 
