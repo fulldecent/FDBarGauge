@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [Master](https://github.com/fulldecent/FDBarGauge/compare/4.0.0...master)
+## [Master](https://github.com/fulldecent/FDBarGauge/compare/5.0.0...master)
+
+---
+
+## [5.0.0](https://github.com/fulldecent/FDBarGauge/releases/tag/5.0.0)
+Released on 2019-11-11.
 
 #### Added
 
