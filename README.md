@@ -1,20 +1,16 @@
-FDBarGauge
-==========
+# FDBarGauge
 
 [![CI Status](http://img.shields.io/travis/fulldecent/FDBarGauge.svg?style=flat)](https://travis-ci.org/fulldecent/FDBarGauge)
-[![Version](https://img.shields.io/cocoapods/v/FDBarGauge.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGauge)
-[![License](https://img.shields.io/cocoapods/l/FDBarGauge.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGauge)
-[![Platform](https://img.shields.io/cocoapods/p/FDBarGauge.svg?style=flat)](http://cocoadocs.org/docsets/FDBarGauge)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=fulldecent/fdbargauge)](http://clayallsopp.github.io/readme-score?url=fulldecent/fdbargauge)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/fulldecent/FDBarGauge)
+[![License](https://img.shields.io/github/license/fulldecent/FDBarGauge)](LICENSE)
 
-![Screenshot](https://raw.github.com/haydenholligan/FDBarGauge/master/FDBarGauge.png "Screenshot of Component Demo App")
+![Screenshot](FDBarGauge.png "Screenshot of Component Demo App")
 
 The successor to F3BarGauge
 
 
-Background
-----------
+## Background
+
 This control is intended to replicate/simulate the level indicator on an audio mixing board. These indicators are usually segmented/stacked LEDs, with several colors to indicate thresholds. This control replicates that look, using Quartz drawing primitives, and auto-adjusts to horizontal or vertical orientation. Additionally, the colors, number of bars, peak hold, and other items are easily customized. Intended uses include:
 
  * Realtime data visualization
@@ -22,8 +18,8 @@ This control is intended to replicate/simulate the level indicator on an audio m
  * Single-value charting
  * A VERY simple bar chart (if you use several of these)
 
-Usage
------
+## Usage
+
 Adding this control to your XCode project is straightforward:
 
 1.  Add FDBarGauge.swift to your project
@@ -89,13 +85,12 @@ Following are all of the customizable properties:
 @IBInspectable public var dangerColor: UIColor
 ```
 
-Installation
-------------
+## Installation
 
 Use Swift Package Manager. In Xcode use: File > Swift Packages > Add Package Dependency…
 
-License
--------
+## License
+
 Copyright (c) 2016 William Entriken
 
 Copyright (c) 2011–2014 by Brad Benson
