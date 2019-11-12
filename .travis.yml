@@ -4,10 +4,9 @@ env:
   global:
   - WORKSPACE="./iOS Example/iOS Example.xcworkspace"
   - IOS_FRAMEWORK_SCHEME="iOS Example"
-  - IOS_SDK
   - EXAMPLE_SCHEME="iOS Example"
   matrix:
-    - DESTINATION="OS=13.2,name=iPhone 11"
+    - DESTINATION="OS=13.1,name=iPhone 11"
       SCHEME="$IOS_FRAMEWORK_SCHEME"
 script:
   - set -o pipefail
@@ -16,8 +15,5 @@ script:
   - xcodebuild -list
   - xcodebuild -workspace "$WORKSPACE" -list
 
-  # Build Framework in Release and Run Tests
-  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty;
-
   # Build Example in Debug
-  - xcodebuild -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c
