@@ -22,7 +22,7 @@ This control is intended to replicate/simulate the level indicator on an audio m
 
 Adding this control to your XCode project is straightforward:
 
-1.  Add FDBarGauge.swift to your project
+1.  Add FDBarGauge to your project (File > Swift Packages > Add Package Dependency...)
 
 2.  Add a new blank subview to your nib/storyboard, sized and positioned to match what the bar gauge should look like.
     
