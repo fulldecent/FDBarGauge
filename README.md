@@ -13,10 +13,10 @@ The successor to F3BarGauge
 
 This control is intended to replicate/simulate the level indicator on an audio mixing board. These indicators are usually segmented/stacked LEDs, with several colors to indicate thresholds. This control replicates that look, using Quartz drawing primitives, and auto-adjusts to horizontal or vertical orientation. Additionally, the colors, number of bars, peak hold, and other items are easily customized. Intended uses include:
 
- * Realtime data visualization
- * Level bars
- * Single-value charting
- * A VERY simple bar chart (if you use several of these)
+ - Realtime data visualization
+ - Level bars
+ - Single-value charting
+ - A VERY simple bar chart (if you use several of these)
 
 ## Usage
 
