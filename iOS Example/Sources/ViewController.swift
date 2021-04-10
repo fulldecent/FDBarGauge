@@ -7,7 +7,7 @@
 
 import UIKit
 
-import FDBarGuage
+import FDBarGauge
 
 class ViewController: UIViewController {
 

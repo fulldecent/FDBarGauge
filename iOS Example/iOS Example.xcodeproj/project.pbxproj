@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D994AA48237909EC0013153C /* FDBarGuage in Frameworks */ = {isa = PBXBuildFile; productRef = D994AA47237909EC0013153C /* FDBarGuage */; };
+		D994AA48237909EC0013153C /* FDBarGauge in Frameworks */ = {isa = PBXBuildFile; productRef = D994AA47237909EC0013153C /* FDBarGauge */; };
 		D9A12776235699C600D136A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A12775235699C600D136A5 /* AppDelegate.swift */; };
 		D9A12778235699C600D136A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A12777235699C600D136A5 /* SceneDelegate.swift */; };
 		D9A1277A235699C600D136A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A12779235699C600D136A5 /* ViewController.swift */; };
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D994AA48237909EC0013153C /* FDBarGuage in Frameworks */,
+				D994AA48237909EC0013153C /* FDBarGauge in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			);
 			name = "iOS Example";
 			packageProductDependencies = (
-				D994AA47237909EC0013153C /* FDBarGuage */,
+				D994AA47237909EC0013153C /* FDBarGauge */,
 			);
 			productName = "iOS Example";
 			productReference = D9A12772235699C600D136A5 /* iOS Example.app */;
@@ -353,9 +353,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D994AA47237909EC0013153C /* FDBarGuage */ = {
+		D994AA47237909EC0013153C /* FDBarGauge */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FDBarGuage;
+			productName = FDBarGauge;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
