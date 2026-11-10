@@ -24,7 +24,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-NU-bS4" userLabel="Left Bar Gauge" customClass="FDBarGauge" customModule="FDBarGuage">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-NU-bS4" userLabel="Left Bar Gauge" customClass="FDBarGauge" customModule="FDBarGauge">
                                 <rect key="frame" x="20" y="76" width="50" height="516"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -43,7 +43,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPf-a7-2aF" customClass="FDBarGauge" customModule="FDBarGuage">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPf-a7-2aF" customClass="FDBarGauge" customModule="FDBarGauge">
                                                 <rect key="frame" x="0.0" y="21" width="308" height="31"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -73,7 +73,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdq-Sr-p2i" customClass="FDBarGauge" customModule="FDBarGuage">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdq-Sr-p2i" customClass="FDBarGauge" customModule="FDBarGauge">
                                                 <rect key="frame" x="0.0" y="21" width="308" height="30.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -103,7 +103,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brk-pS-BP8" customClass="FDBarGauge" customModule="FDBarGuage">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brk-pS-BP8" customClass="FDBarGauge" customModule="FDBarGauge">
                                                 <rect key="frame" x="0.0" y="21" width="308" height="31"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -133,7 +133,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-7t-4Dz" customClass="FDBarGauge" customModule="FDBarGuage">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-7t-4Dz" customClass="FDBarGauge" customModule="FDBarGauge">
                                                 <rect key="frame" x="0.0" y="21" width="308" height="31"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -181,7 +181,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-wT-on9" customClass="FDBarGauge" customModule="FDBarGuage">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-wT-on9" customClass="FDBarGauge" customModule="FDBarGauge">
                                                 <rect key="frame" x="0.0" y="21" width="248" height="24.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -216,7 +216,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0D-bC-l36" userLabel="Background">
                                                 <rect key="frame" x="0.0" y="26" width="308" height="43.5"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="196-EU-FRC" customClass="FDBarGauge" customModule="FDBarGuage">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="196-EU-FRC" customClass="FDBarGauge" customModule="FDBarGauge">
                                                         <rect key="frame" x="10" y="1" width="291" height="41.5"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>

@@ -1,7 +1,7 @@
 import XCTest
 
-import FDBarGuageTests
+import FDBarGaugeTests
 
 var tests = [XCTestCaseEntry]()
-tests += FDBarGuageTests.allTests()
+tests += FDBarGaugeTests.allTests()
 XCTMain(tests)
