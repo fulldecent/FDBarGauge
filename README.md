@@ -8,31 +8,30 @@
 
 The successor to F3BarGauge
 
-
 ## Background
 
 This control is intended to replicate/simulate the level indicator on an audio mixing board. These indicators are usually segmented/stacked LEDs, with several colors to indicate thresholds. This control replicates that look, using Quartz drawing primitives, and auto-adjusts to horizontal or vertical orientation. Additionally, the colors, number of bars, peak hold, and other items are easily customized. Intended uses include:
 
- - Realtime data visualization
- - Level bars
- - Single-value charting
- - A VERY simple bar chart (if you use several of these)
+- Realtime data visualization
+- Level bars
+- Single-value charting
+- A VERY simple bar chart (if you use several of these)
 
 ## Usage
 
 Adding this control to your XCode project is straightforward:
 
-1.  Add FDBarGauge to your project (File > Swift Packages > Add Package Dependency...)
+1. Add FDBarGauge to your project (File > Swift Packages > Add Package Dependency...)
 
-2.  Add a new blank subview to your nib/storyboard, sized and positioned to match what the bar gauge should look like.
-    
-3.  In the properties inspector for this subview, change the class to "FDBarGauge"
-    
-4.  Below class, change the module to "FDBarGauge"
+2. Add a new blank subview to your nib/storyboard, sized and positioned to match what the bar gauge should look like.
 
-5.  Add an IBOutlet to your view controller
+3. In the properties inspector for this subview, change the class to "FDBarGauge"
 
-6.  Update your code to set the value property as appropriate.
+4. Below class, change the module to "FDBarGauge"
+
+5. Add an IBOutlet to your view controller
+
+6. Update your code to set the value property as appropriate.
 
 For more information have a look at the demo code, which has multiple examples including a version that customizes the with an LCD-style appearance.
 
