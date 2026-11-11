@@ -2,9 +2,9 @@ os: osx
 osx_image: xcode11.1
 env:
   global:
-  - WORKSPACE="./iOS Example/iOS Example.xcworkspace"
-  - IOS_FRAMEWORK_SCHEME="iOS Example"
-  - EXAMPLE_SCHEME="iOS Example"
+    - WORKSPACE="./iOS Example/iOS Example.xcworkspace"
+    - IOS_FRAMEWORK_SCHEME="iOS Example"
+    - EXAMPLE_SCHEME="iOS Example"
   matrix:
     - DESTINATION="OS=13.1,name=iPhone 11"
       SCHEME="$IOS_FRAMEWORK_SCHEME"

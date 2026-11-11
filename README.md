@@ -2,37 +2,36 @@
 
 [![CI Status](http://img.shields.io/travis/fulldecent/FDBarGauge.svg?style=flat)](https://travis-ci.org/fulldecent/FDBarGauge)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/fulldecent/FDBarGauge)
-[![License](https://img.shields.io/github/license/fulldecent/FDBarGauge)](LICENSE)
+[![License](https://img.shields.io/github/license/fulldecent/FDBarGauge)](LICENSE.md)
 
 ![Screenshot](FDBarGauge.gif "Screenshot of Component Demo App")
 
 The successor to F3BarGauge
 
-
 ## Background
 
 This control is intended to replicate/simulate the level indicator on an audio mixing board. These indicators are usually segmented/stacked LEDs, with several colors to indicate thresholds. This control replicates that look, using Quartz drawing primitives, and auto-adjusts to horizontal or vertical orientation. Additionally, the colors, number of bars, peak hold, and other items are easily customized. Intended uses include:
 
- - Realtime data visualization
- - Level bars
- - Single-value charting
- - A VERY simple bar chart (if you use several of these)
+- Realtime data visualization
+- Level bars
+- Single-value charting
+- A VERY simple bar chart (if you use several of these)
 
 ## Usage
 
 Adding this control to your XCode project is straightforward:
 
-1.  Add FDBarGauge to your project (File > Swift Packages > Add Package Dependency...)
+1. Add FDBarGauge to your project (File > Swift Packages > Add Package Dependency...)
 
-2.  Add a new blank subview to your nib/storyboard, sized and positioned to match what the bar gauge should look like.
-    
-3.  In the properties inspector for this subview, change the class to "FDBarGauge"
-    
-4.  Below class, change the module to "FDBarGauge"
+2. Add a new blank subview to your nib/storyboard, sized and positioned to match what the bar gauge should look like.
 
-5.  Add an IBOutlet to your view controller
+3. In the properties inspector for this subview, change the class to "FDBarGauge"
 
-6.  Update your code to set the value property as appropriate.
+4. Below class, change the module to "FDBarGauge"
+
+5. Add an IBOutlet to your view controller
+
+6. Update your code to set the value property as appropriate.
 
 For more information have a look at the demo code, which has multiple examples including a version that customizes the with an LCD-style appearance.
 
@@ -95,4 +94,16 @@ Copyright (c) 2016 William Entriken
 
 Copyright (c) 2011–2014 by Brad Benson
 
-This is released under the MIT licence. Please see the file LICENSE for details.
+This is released under the MIT licence. Please see the file LICENSE.md for details.
+
+## Releases
+
+Use `fix:`, `feat:`, or `BREAKING CHANGE:` prefixes in commit messages. [Release Please](https://github.com/googleapis/release-please) opens a release pull request from those commits. Merging that pull request publishes a tag and a GitHub Release. The git tag is what Swift Package Manager installs.
+
+GitHub Actions needs permission to open pull requests.
+
+If you are adopting this from an existing project and the first Release Please pull request gets the version wrong, check the Release Please documentation. You may need a configuration option when tags have no v prefix, and for other situations.
+
+## References
+
+This repository is built on [swift-module-template](https://github.com/fulldecent/swift-module-template) v16.6.0 and [project-template](https://github.com/fulldecent/project-template) v1.4.1. The published build is an Apple-platform library, not the template's Linux static library.
